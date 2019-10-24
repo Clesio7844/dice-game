@@ -1,7 +1,12 @@
+body{
+    background-image: url(image/portfolio_bg.jpg);
+}
+
+
 .container{
     text-align: center;
     width: 80%;
-    margin: 30px auto;
+    margin: 50px auto;
 }
 .dice{
 
@@ -26,4 +31,28 @@ p{
 
 img {
     width: 80%;
+}
+
+.center{
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+#button{
+    margin-top: 20px;
+    display: inline-block;
+    color: #e74c3c;
+    text-decoration:  none;
+    border: 2px solid #e74c3c;
+    border-radius: 24px;
+    padding: 8px 40px;
+    transition: 0.4s linear;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+#button:hover{
+    color: #fff;
+    background: #e74c3c;
 }

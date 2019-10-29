@@ -4,24 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="container"> 
-      <h1> Refresh </h1>
-      <div class="dice">
-          <p>Player 1</p>
-          <img class="img1" src="image/dice6.png" alt="">
-      </div>
-      <div class="dice">
-            <p>Player 2</p>
-            <img class="img2" src="image/dice6.png" alt="">
+    <div class="wrapper p1">
+        <div class="play active" >
+            <div class="name1">Player 1</div>
+            <div class="score1">20</div>
+            <div class="box">
+                <div class="label">currrent</div>
+                <div class="currentscore" id="curre-1">11</div>
+            </div>
+
         </div>
-        <button id="button">Submit</button>  
+
+        <div class="play2">
+                <div class="name1">Player 2</div>
+                <div class="score1">20</div>
+                <div class="box">
+                    <div class="label">currrent</div>
+                    <div class="currentscore">11</div>
+                </div>
+    
+            </div>
+            <button class="new">New game</button>
+            <button class="roll">Roll dice</button>
+            <button class="hold">Hold</button>
+
+            <input type="text" placeholder=" score" class="final">
+            
+            <img src="image/dice6.png" alt="dice" class="dice1" >
+            <img src="image/dice6.png" alt="dice" class="dice2" >
+            
+
+
     </div>
- <div class="center">
+    
     <script src="app.js"></script>
-</div>
 </body>
 </html>

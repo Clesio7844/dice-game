@@ -1,58 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body{
     background-image: url(image/portfolio_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400px;
+    position: relative;
+    height: 10vh;
+}
+
+.p1::after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+.wrapper{
+    width: 1000px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    box-shadow: 0px 10px 50px;
+    overflow: hidden;
+}
+
+.play, .play2{
+    float: left;
+    width: 50%;
+    height: 200px;
+    padding: 100px;
+    color: blanchedalmond;
 }
 
 
-.container{
+.name1{
     text-align: center;
-    width: 80%;
-    margin: 50px auto;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 40px;
+    font-weight: 100px;
+    margin-bottom: 100px;
 }
-.dice{
 
-    display: inline-block;
+button{
+    position: absolute;
+    width: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: red;
+    text-transform: uppercase;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 600px;
+
+
+}
+
+.new{
+    top:45px;
+}
+
+.roll{
+    top:500px;
+}
+
+.hold{
+    top: 20px;
+}
+
+.dice1 {
+    top: 500px;
+    width: 120px;
+}
+.dice2{
+    top: 250px;
+    width: 120px;
+}
+.final{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
+    color: red;
     text-align: center;
-}
-
-body{
-    background-color: red;
-}
-
-h1{
-    font-size: 20px;
-    text-shadow: 5px 0 black;
-    color: white;
-}
-
-p{
-    color: white;
-    text-shadow: 5px 0 black;
-}
-
-img {
-    width: 80%;
-}
-
-.center{
-    width: 40%;
-    margin-left: 30%;
-    margin-right: 30%;
-}
-
-#button{
-    margin-top: 20px;
-    display: inline-block;
-    color: #e74c3c;
-    text-decoration:  none;
-    border: 2px solid #e74c3c;
-    border-radius: 24px;
-    padding: 8px 40px;
-    transition: 0.4s linear;
-    margin-left: 30%;
-    margin-right: 30%;
-}
-
-#button:hover{
-    color: #fff;
-    background: #e74c3c;
+    text-transform: uppercase;
 }

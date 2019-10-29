@@ -9,6 +9,7 @@ document.querySelector(".img1").setAttribute("src", playergameimage);
 document.querySelector(".img2").setAttribute("src", newagmelist);
 
 
+button.addEventListener("click", () => {
     if(playergameimage > newagmelist){
         document.querySelector("h1").innerHTML = " Player 1 Win"
     }else if(playergameimage < newagmelist){
@@ -17,8 +18,5 @@ document.querySelector(".img2").setAttribute("src", newagmelist);
         document.querySelector("h1").innerHTML = " Roll Again"
     }
 
+});
 
-
-// if(playergameimage > 6){
-//     document.querySelector("h1").innerHTML = ""
-// }

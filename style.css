@@ -30,7 +30,7 @@ body{
     transform: translate(-50%, 50%);
     box-shadow: 0px 10px 50px;
     overflow: hidden;
-    height: 400px;
+    height: 500px;
 }
 
 .play, .play2{
@@ -51,6 +51,26 @@ body{
     margin-bottom: 100px;
     position: relative;
     margin-top: 10;
+}
+
+.score1{
+    position: absolute;
+    font-size: 80px;
+    font-weight: 100;
+    color: #EB4D4D;
+    margin-bottom: 130px;
+    top: 130px;
+    right: 245px;
+}
+
+.score2{
+    position: absolute;
+    font-size: 80px;
+    font-weight: 100;
+    color: #EB4D4D;
+    margin-bottom: 130px;
+    top: 130px;
+    left: 200px;
 }
 
 .box{
@@ -77,23 +97,72 @@ button{
 
 .new{
     top:45px;
+    color: #e74c3c;
+    text-decoration:  none;
+    border: 2px solid #e74c3c;
+    border-radius: 24px;
+    padding: 8px 40px;
+    transition: 0.4s linear;
+}
+
+.new:hover{
+    color: #fff;
+    background: #e74c3c;
+    
 }
 
 .roll{
-    top:500px;
+    top:300px;
+    position: absolute;
+    color: #e74c3c;
+    text-decoration:  none;
+    border: 2px solid #e74c3c;
+    border-radius: 24px;
+    padding: 8px 40px;
+    transition: 0.4s linear;
+    
+    
+    
+    
+    
+}
+
+.roll:hover{
+    color: #fff;
+    background: #e74c3c;
+    
 }
 
 .hold{
-    top: 20px;
+    top: 350px;
+    position: absolute;
+    color: #e74c3c;
+    text-decoration:  none;
+    border: 2px solid #e74c3c;
+    border-radius: 24px;
+    padding: 8px 60px;
+    transition: 0.4s linear;
+}
+
+.hold:hover{
+    color: #fff;
+    background: #e74c3c;
+    
 }
 
 .dice1 {
-    top: 500px;
+    top: 190px;
     width: 120px;
+    position: absolute;
+    left: 300px;
+    height: 50px;
 }
 .dice2{
-    top: 250px;
+    top: 190px;
     width: 120px;
+    position: absolute;
+    right: 350px;
+    height: 50px;
 }
 .final{
     position: absolute;

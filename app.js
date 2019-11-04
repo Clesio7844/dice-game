@@ -1,22 +1,34 @@
 //document.querySelector("h1").innerHTML = "player game";
-let list = Math.floor(Math.random() * 6) + 1;
-let secondlist = Math.floor(Math.random() * 6) + 1;
-let playergameimage = "image/dice" + list +".png";
-let newagmelist = "image/dice" + secondlist +".png";
-const bnutton = document.getElementById("button")
+// let list = Math.floor(Math.random() * 6) + 1;
 
-document.querySelector(".img1").setAttribute("src", playergameimage);
-document.querySelector(".img2").setAttribute("src", newagmelist);
+let list = [0, 0];
+let round = 0;
+let plyerlist = 0;
 
 
-button.addEventListener("click", () => {
-    if(playergameimage > newagmelist){
-        document.querySelector("h1").innerHTML = " Player 1 Win"
-    }else if(playergameimage < newagmelist){
-        document.querySelector("h1").innerHTML = " Player 2 Win"
-    }else {
-        document.querySelector("h1").innerHTML = " Roll Again"
-    }
 
-});
+// document.querySelector ('#curre-' + plyerlist).textContent = dice
 
+// document.querySelector(".dice1").style.display = "none";
+
+document.getElementById("score-0").textContent = "0";
+document.getElementById("score-1").textContent = "0";
+document.getElementById("curre-0").textContent = "0";
+document.getElementById("curre-1").textContent = "0";
+
+
+// document.getElementsByClassName("#score").textContent = "0";
+// document.getElementsByClassName("#score").textContent = "0";
+// document.getElementsByClassName("#curre-0").textContent = "0";
+// document.getElementsByClassName("#curre-1").textContent = "0";
+
+
+
+function btn (){
+    let dice = Math.floor(Math.random() * 6) + 1;
+
+    let newdice = document.querySelector(".dice1");
+    newdice.style.display = "block";
+    newdice.src = "image/dice-" + dice + ".png"
+}
+document.querySelector('.roll').addEventListener ("click", btn)
